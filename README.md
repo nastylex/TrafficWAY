@@ -1,0 +1,1 @@
+TrafficWay is a smart traffic management platform that provides real-time traffic updates, route optimization, accident alerts, and navigation assistance. It helps drivers reduce travel time, avoid congestion, improve road safety, and reach destinations efficiently through intelligent mapping and live traffic analysis.
