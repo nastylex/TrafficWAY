@@ -237,7 +237,7 @@ function checkedPath(path, baseUrl) {
 
 export const panelRequest = defineTool({
   name: PANEL_REQUEST_TOOL,
-  title: "TrafficWay panel request",
+  title: 'TrafficWay panel request',
   description:
     "Loads a file or data for the TrafficWay panel from the app's " +
     'server. Only the panel calls this; it does not answer questions.',
@@ -272,7 +272,7 @@ export const panelRequest = defineTool({
     if (!isPanelKey(args.key, services.app.panelKey))
       throw new ToolError(
         'invalid_arguments',
-        "Only the TrafficWay panel may make this request",
+        'Only the TrafficWay panel may make this request',
       );
     const state = panelState(services.app);
     forgetExpired(state);

@@ -23,8 +23,7 @@ const PUBLIC_NOMINATIM_HOST = 'nominatim.openstreetmap.org';
  * application. The identity is stable: it is never rotated or varied.
  */
 const NOMINATIM_HEADERS = Object.freeze({
-  'User-Agent':
-    'trafficway/0.1 (+https://github.com/nastylex/TrafficWAY)',
+  'User-Agent': 'trafficway/0.1 (+https://github.com/nastylex/TrafficWAY)',
   Referer: 'https://github.com/nastylex/TrafficWAY',
 });
 

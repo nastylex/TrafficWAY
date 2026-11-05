@@ -137,8 +137,8 @@ export function createGlobePanelResource({ runtime, panelKey }) {
   return Object.freeze({
     uri: GLOBE_PANEL_URI,
     name: 'globe',
-    title: "TrafficWay globe",
-    description: "Live TrafficWay, showing the view a tool returns.",
+    title: 'TrafficWay globe',
+    description: 'Live TrafficWay, showing the view a tool returns.',
     mimeType: MCP_APP_MIME_TYPE,
     text: panelHtml(runtime, panelKey),
     _meta: {
