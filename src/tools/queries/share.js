@@ -106,10 +106,10 @@ function appBase(services) {
 
 export const showInTrafficWay = defineTool({
   name: 'show_in_gods_eye_view',
-  title: "Show in TrafficWay",
+  title: 'Show in TrafficWay',
   description:
-    "Shows a view in TrafficWay: in clients that display apps, the live " +
-    "TrafficWay globe in the conversation; everywhere, a link that opens " +
+    'Shows a view in TrafficWay: in clients that display apps, the live ' +
+    'TrafficWay globe in the conversation; everywhere, a link that opens ' +
     'it. Pass the view another answer returned, or describe one: an area ' +
     'framed from above or a camera position, with chosen data layers, visual ' +
     'style and map, optionally following an aircraft (or riding in its ' +

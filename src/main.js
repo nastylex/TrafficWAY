@@ -14,7 +14,7 @@ const application = createStandaloneApplication({
 });
 
 application.start().catch((error) => {
-  console.error("TrafficWay initialization failed:", error);
+  console.error('TrafficWay initialization failed:', error);
   const loaderStatus = document.querySelector('#loading-screen .loader-status');
   loaderStatus.textContent = t('Error: {message}', {
     message: describeError(error),

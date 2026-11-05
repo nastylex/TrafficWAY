@@ -107,10 +107,7 @@ export function keepPanelRendering(
   const removeErrorListener = viewer.scene?.renderError?.addEventListener(
     (_scene, error) => {
       failed = true;
-      console.error(
-        "[TrafficWay panel] render error:",
-        describeError(error),
-      );
+      console.error('[TrafficWay panel] render error:', describeError(error));
     },
   );
   const timer = windowRef.setInterval(() => {

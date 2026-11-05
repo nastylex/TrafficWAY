@@ -542,7 +542,7 @@ export function panelRuntime(config) {
         notice.id = 'status';
         notice.textContent =
           // i18n-ignore: host-panel script, no app catalogs
-          "This panel lost its 3D graphics, likely because other TrafficWay " +
+          'This panel lost its 3D graphics, likely because other TrafficWay ' +
           "View panels in this conversation hold them. Use Open in God's " +
           'Eye View above, or show it in a new conversation.';
         document.body.appendChild(notice);
@@ -570,7 +570,7 @@ export function panelRuntime(config) {
     if (started) return;
     started = true;
     // i18n-ignore: host-panel script, no app catalogs
-    say("Loading TrafficWay…");
+    say('Loading TrafficWay…');
     startApp(url, view).catch((error) =>
       // i18n-ignore: host-panel script, no app catalogs
       say(`TrafficWay could not load here: ${error?.message || error}.`),
@@ -579,9 +579,9 @@ export function panelRuntime(config) {
       if (!ready)
         say(
           // i18n-ignore: see above
-          "TrafficWay did not load here" +
+          'TrafficWay did not load here' +
             (blocked ? ` (${blocked})` : '') +
-            ". Use Open in TrafficWay above.",
+            '. Use Open in TrafficWay above.',
         );
     }, config.loadTimeoutMs);
   }
@@ -646,7 +646,7 @@ export function panelRuntime(config) {
     appInfo: {
       name: 'trafficway',
       // i18n-ignore: product name sent to the MCP host
-      title: "TrafficWay",
+      title: 'TrafficWay',
       version: '1.0.0',
     },
     protocolVersion: config.protocolVersion,
@@ -662,7 +662,7 @@ export function panelRuntime(config) {
     (error) =>
       say(
         // i18n-ignore: host-panel script, no app catalogs
-        "This client did not accept the TrafficWay panel" +
+        'This client did not accept the TrafficWay panel' +
           (error?.message ? `: ${error.message}` : '.'),
       ),
   );
